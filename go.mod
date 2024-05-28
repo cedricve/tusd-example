@@ -2,7 +2,10 @@ module github.com/cedricve/tusd-example
 
 go 1.22.2
 
-require github.com/tus/tusd/v2 v2.4.0
+require (
+	github.com/bdragon300/tusgo v0.1.1
+	github.com/tus/tusd/v2 v2.4.0
+)
 
 require (
 	github.com/tus/lockfile v1.2.0 // indirect

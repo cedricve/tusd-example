@@ -59,8 +59,10 @@ func main() {
 	// http://localhost:8080/files
 	http.Handle("/files/", http.StripPrefix("/files/", handler))
 	http.Handle("/files", http.StripPrefix("/files", handler))
-	err = http.ListenAndServe(":8080", nil)
+	err = http.ListenAndServe(":8089", nil)
 	if err != nil {
 		log.Fatalf("unable to listen: %s", err)
+	} else {
+		log.Println("Listening on 8089...")
 	}
 }
